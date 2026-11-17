@@ -1,0 +1,56 @@
+/*
+ * Marca: default
+ * Capa 1 · Primitivos. Solo esta capa cambia entre marcas.
+ * Los componentes NUNCA leen estas variables: leen los roles de
+ * styles/tokens/semantic.css (expuestos a Tailwind en theme.css).
+ */
+:root {
+  /* Color de marca (índigo) */
+  --brand-50: #eef2ff;
+  --brand-100: #e0e7ff;
+  --brand-200: #c7d2fe;
+  --brand-300: #a5b4fc;
+  --brand-400: #818cf8;
+  --brand-500: #6366f1;
+  --brand-600: #4f46e5;
+  --brand-700: #4338ca;
+  --brand-800: #3730a3;
+  --brand-900: #312e81;
+  --brand-950: #1e1b4b;
+
+  /* Neutros (slate) */
+  --neutral-0: #ffffff;
+  --neutral-50: #f8fafc;
+  --neutral-100: #f1f5f9;
+  --neutral-200: #e2e8f0;
+  --neutral-300: #cbd5e1;
+  --neutral-400: #94a3b8;
+  --neutral-500: #64748b;
+  --neutral-600: #475569;
+  --neutral-700: #334155;
+  --neutral-800: #1e293b;
+  --neutral-900: #0f172a;
+  --neutral-950: #020617;
+
+  /* Estados */
+  --success-light: #15803d;
+  --success-dark: #4ade80;
+  --warning-light: #a16207;
+  --warning-dark: #facc15;
+  --danger-light: #b91c1c;
+  --danger-dark: #f87171;
+
+  /* Forma */
+  --radius-base: 0.5rem;
+
+  /* Iconos */
+  --icon-stroke: 2;
+
+  /* Tipografía: las variables --font-brand-* las define fonts.ts (next/font) */
+}
+
+/*
+ * Ajustes de rol solo para esta marca (opcional).
+ * Ejemplo: si --brand-600 no diera contraste AA, aquí se haría
+ *   :root { --primary: var(--brand-700); }
+ */

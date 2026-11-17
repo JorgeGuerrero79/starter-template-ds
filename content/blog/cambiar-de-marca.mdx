@@ -1,0 +1,18 @@
+export const metadata = {
+  title: "Cómo cambiar de marca",
+  description: "Crear una marca nueva en cuatro pasos sin tocar los componentes.",
+  date: "2026-11-05",
+  tags: ["design system", "marca"],
+};
+
+Los tokens están en tres capas: **primitivos** por marca, **roles** semánticos y la
+**exposición a Tailwind**. Solo la primera cambia entre clientes.
+
+## Cuatro pasos
+
+1. Copia `brands/default/` a `brands/<cliente>/`.
+2. Cambia escalas de color, radios y trazo de íconos en `tokens.css`.
+3. Declara las fuentes en `fonts.ts` con `next/font/google` (o `next/font/local`).
+4. Apunta `brands/active.css` y `brands/active.ts` a la carpeta nueva.
+
+Luego abre [el design system](/design-system) y revisa el contraste en los dos temas.

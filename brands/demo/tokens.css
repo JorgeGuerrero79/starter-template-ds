@@ -1,0 +1,48 @@
+/*
+ * Marca: demo (perfil editorial, verde azulado)
+ * Demuestra que cambiar de marca solo toca esta carpeta.
+ */
+:root {
+  --brand-50: #f0fdfa;
+  --brand-100: #ccfbf1;
+  --brand-200: #99f6e4;
+  --brand-300: #5eead4;
+  --brand-400: #2dd4bf;
+  --brand-500: #14b8a6;
+  --brand-600: #0d9488;
+  --brand-700: #0f766e;
+  --brand-800: #115e59;
+  --brand-900: #134e4a;
+  --brand-950: #042f2e;
+
+  /* Neutros cálidos (stone) */
+  --neutral-0: #ffffff;
+  --neutral-50: #fafaf9;
+  --neutral-100: #f5f5f4;
+  --neutral-200: #e7e5e4;
+  --neutral-300: #d6d3d1;
+  --neutral-400: #a8a29e;
+  --neutral-500: #78716c;
+  --neutral-600: #57534e;
+  --neutral-700: #44403c;
+  --neutral-800: #292524;
+  --neutral-900: #1c1917;
+  --neutral-950: #0c0a09;
+
+  --success-light: #15803d;
+  --success-dark: #4ade80;
+  --warning-light: #a16207;
+  --warning-dark: #facc15;
+  --danger-light: #b91c1c;
+  --danger-dark: #f87171;
+
+  --radius-base: 0.25rem;
+  --icon-stroke: 1.5;
+}
+
+/* --brand-600 (teal) no llega a AA con texto blanco: en claro esta marca usa el 700.
+   :root:not(.dark) limita el ajuste al tema claro. */
+:root:not(.dark) {
+  --primary: var(--brand-700);
+  --link: var(--brand-700);
+}
